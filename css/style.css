@@ -1,0 +1,147 @@
+/* ------------------------ */
+/* HEADER */
+/* ------------------------ */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #edf6fd; */
+  background-color: #e0e8f8;
+  padding: 2.4rem 6.4rem 0 6.4rem;
+}
+
+.logo {
+  height: 10rem;
+}
+
+.nav-list {
+  display: flex;
+  gap: 3.2rem;
+  list-style: none;
+}
+
+.nav-item:link,
+.nav-item:visited {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.nav-item:hover,
+.nav-item:active {
+  color: #b62e0f;
+}
+
+
+
+/* ------------------------ */
+/* HERO SECTION */
+/* ------------------------ */
+
+.section-hero {
+  padding: 5.2rem 0 9.6rem 0;
+  /* background-color: #edf6fd; */
+  background-color: #e0e8f8;
+}
+
+.hero {
+  /* max-width: 130rem;
+  margin: 0 auto; */
+  /* display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem; */
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/* ------------------------ */
+/* HOW IT WORKS SECTION */
+/* ------------------------ */
+
+.section-how {
+  padding: 9.6rem 0;
+
+  /* background-image:
+    radial-gradient(rgba(224, 232, 248, 0.5), rgba(24, 61, 93, 0.5)),
+    radial-gradient(rgba(24, 61, 93, 0.7), rgba(24, 61, 93, 0.9)),
+    url("../img/progress.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.how-to-step {
+  padding: 3.8rem;
+  /* background-color: rgba(255, 255, 255); */
+  /* height: 40rem; */
+}
+
+.how-to-step::before {
+  content: "";
+  border: 5px solid #b62e0f;
+  border-right: none;
+  height: 28rem;
+  width: 1.8rem;
+  display: block;
+  position: absolute;
+  transform: translate(-3rem, -1rem);
+}
+
+/* .how-to-step::before {
+  content: "";
+  border: 5px solid #b62e0f;
+  border-bottom: none;
+  width: 34rem;
+  height: 1.8rem;
+  display: block;
+  position: absolute;
+  transform: translate(-2rem, -3rem);
+} */
+
+/* .how-to-step::after {
+  content: "";
+  border: 5px solid #b62e0f;
+  border-top: none;
+  width: 34rem;
+  height: 1.8rem;
+  display: block;
+  position: absolute;
+  transform: translate(-2rem, 3rem);
+} */
+
+.step-number {
+  color: #e0e8f8;
+  font-size: 7.2rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+/* .step-number::before {
+  content: "";
+  border: 5px solid #b62e0f;
+  border-right: none;
+  height: 3rem;
+  width: 1.8rem;
+  display: block;
+  position: absolute;
+} */
+
+.step-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.step-description {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
