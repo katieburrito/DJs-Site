@@ -35,7 +35,8 @@ GREYS
 --- 04 SHADOWS
 
 --- 05 BORDER RADIUS
-- 4px
+- Buttons: 4px
+- Larger Boxes: 9px
 
 
 --- 06 WHITESPACE
@@ -121,13 +122,22 @@ body {
   margin-bottom: 3.2rem;
 }
 
+.heading-tertiary {
+  font-size: 3.2rem;
+  font-weight: 600;
+  color: #183d5d;
+  text-align: center;
+  margin-bottom: 1.2rem;
+}
+
 .subheading {
   text-transform: uppercase;
   font-size: 1.4rem;
   letter-spacing: 1.5px;
   margin-bottom: 1.8rem;
   font-weight: 600;
-  /* color: #971400; */
+  /* color: #c71b1b; */
+  color: #971400;
 }
 
 
@@ -154,6 +164,7 @@ body {
 .btn--primary:link,
 .btn--primary:visited {
   background-color: #b62e0f;
+  /* background-color: #971400; */
   color: #fff;
 }
 
@@ -167,7 +178,7 @@ body {
 .btn--primary:hover,
 .btn--primary:active {
   background-color: #971400;
-  ;
+  /* background-color: #b62e0f; */
   /* color: #b62e0f; */
   /* box-shadow: inset 0 0 0 2px #b62e0f; */
 }
