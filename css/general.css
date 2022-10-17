@@ -169,6 +169,7 @@ body {
 .btn--primary:link,
 .btn--primary:visited {
   background-color: #b62e0f;
+  /* background-image: linear-gradient(#951212, #b62e0f); */
   color: #fff;
 }
 
@@ -180,7 +181,9 @@ body {
 
 .btn--secondary:link,
 .btn--secondary:visited {
-  background-color: #fff;
+  /* background-color: #fff; */
+  /* background-color: #e0e8f8; */
+  box-shadow: inset 0 0 0 2px #183d5d;
   color: #183d5d;
 }
 
@@ -188,5 +191,6 @@ body {
 .btn--secondary:active {
   background-color: #e0e8f8;
   color: #183d5d;
-  box-shadow: inset 0 0 0 2px #183d5d;
+  /* box-shadow: inset 0 0 0 2px #183d5d; */
+  box-shadow: none;
 }
