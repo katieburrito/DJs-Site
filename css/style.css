@@ -98,6 +98,55 @@
   margin-bottom: 3.2rem;
 }
 
+.featured-logos-group {
+  display: flex;
+  gap: 7.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-logo {
+  height: 3.2rem;
+  filter: brightness(0) invert(1);
+}
+
+.featured-logo-link:link,
+.featured-logo-link:visited {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #666;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.featured-logo-link:hover,
+.featured-logo-link:active {
+  transform: scale(1.2);
+}
+
+/* modified below to use in header instead of separate section . */
+
+.section-hero .featured-logos-group {
+  margin-top: 6.4rem;
+  gap: 3.8rem;
+  justify-content: flex-start;
+}
+
+.section-hero .featured-logo {
+  filter: none;
+  filter: brightness(0) opacity(75%);
+}
+
+.section-hero .featured-logo-link {
+  color: inherit;
+}
+
 .hero-img-box {
   position: relative;
   display: flex;
@@ -125,206 +174,132 @@
 
 
 /* ------------------------ */
-/* HOW IT WORKS SECTION */
+/* PORTFOLIO SECTION */
 /* ------------------------ */
 
-.section-how {
+.section-portfolio {
   padding: 9.6rem 0;
-
-  /* background-image:
-    radial-gradient(rgba(224, 232, 248, 0.5), rgba(24, 61, 93, 0.5)),
-    radial-gradient(rgba(24, 61, 93, 0.7), rgba(24, 61, 93, 0.9)),
-    url("../img/progress.png");
-  background-repeat: no-repeat;
-  background-size: cover; */
-}
-
-.how-to-step {
-  padding: 3.8rem;
-  position: relative;
-  /* background-color: rgba(255, 255, 255); */
-  /* height: 40rem; */
-}
-
-.how-to-step::before {
-  content: "";
-  /* border: 5px solid #b62e0f; */
-  border-width: 5px;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, #b62e0f, #f2aaaa) 5;
-  border-right: none;
-  height: 32rem;
-  width: 3rem;
-  display: block;
-  position: absolute;
-  transform: translate(-3rem, -1rem);
-}
-
-/* .how-to-step::before {
-  content: "";
-  border: 5px solid #b62e0f;
-  border-bottom: none;
-  width: 34rem;
-  height: 1.8rem;
-  display: block;
-  position: absolute;
-  transform: translate(-2rem, -3rem);
-} */
-
-/* .how-to-step::after {
-  content: "";
-  border: 5px solid #b62e0f;
-  border-top: none;
-  width: 34rem;
-  height: 1.8rem;
-  display: block;
-  position: absolute;
-  transform: translate(-2rem, 3rem);
-} */
-
-.step-number {
-  color: #e0e8f8;
-  font-size: 8rem;
-  font-weight: 700;
-  margin-bottom: 2.4rem;
-}
-
-/* .step-number::before {
-  content: "";
-  border: 5px solid #b62e0f;
-  border-right: none;
-  height: 3rem;
-  width: 1.8rem;
-  display: block;
-  position: absolute;
-} */
-
-.step-title {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-bottom: 1.8rem;
-}
-
-.step-description {
-  font-size: 1.8rem;
-  line-height: 1.4;
-}
-
-.popup-link:link,
-.popup-link:visited {
-  color: #183d5d;
-  transition: all 0.3s;
-}
-
-.popup-link:hover,
-.popup-link:active {
-  color: #b62e0f;
-  text-decoration: none;
-}
-
-/* ------------------------ */
-/* FEATURED SECTION */
-/* ------------------------ */
-
-.section-featured-in {
-  padding: 4.8rem 0;
-  background-color: #e0e8f8;
   background-color: #183d5d;
 }
 
-.heading-featured {
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.75px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 2.4rem;
-  color: #fff;
-  color: #e0e8f8;
+/* for 3x5 gallery, use below two rules: */
+.portfolio-gallery {
+  width: 100rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.6rem;
 }
 
-.featured-logos-group {
+.portfolio-img-link-box:link,
+.portfolio-img-link-box:visited {
+  height: 20rem;
+  width: 20rem;
+  overflow: hidden;
   display: flex;
-  gap: 7.2rem;
   justify-content: center;
-  align-items: center;
+  transition: all 0.4s;
+
+  position: relative;
 }
 
-.featured-logo {
-  height: 3.2rem;
-  filter: brightness(0) invert(1);
+
+/* for 3x3 gallery, use below two rules: */
+/* .portfolio-gallery {
+  width: 79rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
-.featured-logo-link:link,
-.featured-logo-link:visited {
-  font-size: 1.4rem;
-  font-weight: 600;
-  text-decoration: none;
-  /* color: #666; */
-  color: #fff;
-  text-transform: uppercase;
+.portfolio-img-link-box:link,
+.portfolio-img-link-box:visited {
+  height: 25rem;
+  width: 25rem;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  align-items: center;
-  transition: all 0.3s;
+  justify-content: center;
+  transition: all 0.4s;
+  position: relative;
+} */
+
+.portfolio-img-link-box:hover,
+.portfolio-img-link-box:active {}
+
+/* the following two rules must be written in this order for the hover to work properly */
+/* see: https://css-tricks.com/hover-on-everything-but/ */
+
+.portfolio-gallery:hover .portfolio-img {
+  filter: grayscale(1) brightness(0.35);
 }
 
-.featured-logo-link:hover,
-.featured-logo-link:active {
+.portfolio-img-link-box:hover .portfolio-img {
+  filter: brightness(1.15);
   transform: scale(1.2);
 }
 
-/* modified below to use in header instead of separate section*/
-.section-hero .featured-logos-group {
-  margin-top: 6.4rem;
-  gap: 3.8rem;
-  justify-content: flex-start;
+.portfolio-img {
+  height: 100%;
+  width: auto;
+  transition: all 0.4s;
 }
 
-.section-hero .featured-logo {
-  filter: none;
-  filter: brightness(0) opacity(75%);
-}
-
-.section-hero .featured-logo-link {
-  color: inherit;
-}
-
-
-/* ------------------------ */
-/* SERVICES SECTION */
-/* ------------------------ */
-
-.section-services {
-  padding: 9.6rem 0;
-}
-
-.service-boxes {
-  margin-bottom: 2.4rem;
-}
-
-.service-box {
-  border-radius: 9px;
-  overflow: hidden;
-  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
-}
-
-.service-photo {
+.portfolio-project-link {
   width: 100%;
-  margin-bottom: 3.2rem;
-}
-
-.service-description {
-  font-size: 1.8rem;
-  line-height: 1.8;
-  padding: 0 3.2rem 3.2rem 3.2rem;
-}
-
-.service-areas {
-  font-size: 1.6rem;
   text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0.7rem;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.4s;
 }
+
+.portfolio-img-link-box:hover .portfolio-project-link {
+  opacity: 1;
+}
+
+/* tried below method to add message on hover only, but it is a functional part of the page, so probably better to be in the html for accessibility, also was struggling to set transition */
+/* .portfolio-img-link-box:hover::after {
+  content: "See more of this project";
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 0.7rem;
+  position: absolute;
+  bottom: 0;
+} */
+/* border: 1px solid #333; */
+/* border-radius: 4px; */
+/* transform: translate(0, -50%); */
+
+.portfolio-link--all:link,
+.portfolio-link--all:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 4.8rem auto 0 auto;
+  display: block;
+  transition: all 0.3s;
+}
+
+.portfolio-link--all:hover,
+.portfolio-link--all:active {
+  color: #e0e8f8;
+}
+
 
 /* ------------------------ */
 /* TESTIMONIALS SECTION */
@@ -437,132 +412,6 @@
 
 
 /* ------------------------ */
-/* PORTFOLIO SECTION */
-/* ------------------------ */
-
-.section-portfolio {
-  padding: 9.6rem 0;
-  background-color: #183d5d;
-}
-
-/* .portfolio-gallery {
-  width: 100rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.6rem;
-}
-
-.portfolio-img-link-box:link,
-.portfolio-img-link-box:visited {
-  height: 20rem;
-  width: 20rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  transition: all 0.4s;
-
-  position: relative;
-} */
-
-.portfolio-gallery {
-  width: 79rem;
-  margin: 0 auto;
-  display: grid;
-  /* grid-template-columns: repeat(5, 1fr); */
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.portfolio-img-link-box:link,
-.portfolio-img-link-box:visited {
-  height: 25rem;
-  width: 25rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  transition: all 0.4s;
-  position: relative;
-}
-
-.portfolio-img-link-box:hover,
-.portfolio-img-link-box:active {}
-
-/* the following two rules must be written in this order for the hover to work properly */
-/* see: https://css-tricks.com/hover-on-everything-but/ */
-
-.portfolio-gallery:hover .portfolio-img {
-  filter: grayscale(1) brightness(0.35);
-}
-
-.portfolio-img-link-box:hover .portfolio-img {
-  filter: brightness(1.15);
-  transform: scale(1.2);
-}
-
-.portfolio-img {
-  height: 100%;
-  width: auto;
-  transition: all 0.4s;
-}
-
-.portfolio-project-link {
-  width: 100%;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 0.7rem;
-  position: absolute;
-  bottom: 0;
-  opacity: 0;
-  transition: all 0.4s;
-}
-
-.portfolio-img-link-box:hover .portfolio-project-link {
-  opacity: 1;
-}
-
-/* tried below method to add message on hover only, but it is a functional part of the page, so probably better to be in the html for accessibility, also was struggling to set transition */
-/* .portfolio-img-link-box:hover::after {
-  content: "See more of this project";
-  width: 100%;
-  text-align: center;
-  font-size: 1.6rem;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 0.7rem;
-  position: absolute;
-  bottom: 0;
-} */
-/* border: 1px solid #333; */
-/* border-radius: 4px; */
-/* transform: translate(0, -50%); */
-
-.portfolio-link--all:link,
-.portfolio-link--all:visited {
-  text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
-  transition: all 0.3s;
-  margin: 4.8rem auto 0 auto;
-  display: block;
-  transition: all 0.3s;
-}
-
-.portfolio-link--all:hover,
-.portfolio-link--all:active {
-  color: #e0e8f8;
-}
-
-
-/* ------------------------ */
 /* WHY DJ'S SECTION */
 /* ------------------------ */
 
@@ -591,6 +440,214 @@
 
 .why-djs-description {
   font-size: 1.8rem;
-  line-height: 1.8;
+  line-height: 1.6;
   padding: 0 2.4rem 3.2rem 2.4rem;
+}
+
+
+/* ------------------------ */
+/* HOW IT WORKS SECTION */
+/* ------------------------ */
+
+.section-how {
+  padding: 9.6rem 0;
+
+  /* background-image:
+    radial-gradient(rgba(224, 232, 248, 0.5), rgba(24, 61, 93, 0.5)),
+    radial-gradient(rgba(24, 61, 93, 0.7), rgba(24, 61, 93, 0.9)),
+    url("../img/progress.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.how-to-step {
+  padding: 3.8rem;
+  position: relative;
+  /* background-color: rgba(255, 255, 255); */
+  /* height: 40rem; */
+}
+
+.how-to-step::before {
+  content: "";
+  /* border: 5px solid #b62e0f; */
+  border-width: 5px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #b62e0f, #f2aaaa) 5;
+  border-right: none;
+  height: 34rem;
+  width: 3rem;
+  display: block;
+  position: absolute;
+  transform: translate(-3rem, -1rem);
+}
+
+/* .how-to-step::before {
+  content: "";
+  border: 5px solid #b62e0f;
+  border-bottom: none;
+  width: 34rem;
+  height: 1.8rem;
+  display: block;
+  position: absolute;
+  transform: translate(-2rem, -3rem);
+} */
+
+/* .how-to-step::after {
+  content: "";
+  border: 5px solid #b62e0f;
+  border-top: none;
+  width: 34rem;
+  height: 1.8rem;
+  display: block;
+  position: absolute;
+  transform: translate(-2rem, 3rem);
+} */
+
+.step-number {
+  color: #e0e8f8;
+  font-size: 8rem;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+/* .step-number::before {
+  content: "";
+  border: 5px solid #b62e0f;
+  border-right: none;
+  height: 3rem;
+  width: 1.8rem;
+  display: block;
+  position: absolute;
+} */
+
+.step-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1.8rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.popup-link:link,
+.popup-link:visited {
+  color: #183d5d;
+  transition: all 0.3s;
+}
+
+.popup-link:hover,
+.popup-link:active {
+  color: #b62e0f;
+  text-decoration: none;
+}
+
+
+
+
+/* ------------------------ */
+/* FEATURED SECTION */
+/* ------------------------ */
+
+/* .section-featured-in {
+  padding: 4.8rem 0;
+  background-color: #e0e8f8;
+  background-color: #183d5d;
+}
+
+.heading-featured {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #fff;
+  color: #e0e8f8;
+}
+
+.featured-logos-group {
+  display: flex;
+  gap: 7.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured-logo {
+  height: 3.2rem;
+  filter: brightness(0) invert(1);
+}
+
+.featured-logo-link:link,
+.featured-logo-link:visited {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #666;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.featured-logo-link:hover,
+.featured-logo-link:active {
+  transform: scale(1.2);
+} */
+
+
+/* modified below to use in header instead of separate section . */
+
+/* .section-hero .featured-logos-group {
+  margin-top: 6.4rem;
+  gap: 3.8rem;
+  justify-content: flex-start;
+}
+
+.section-hero .featured-logo {
+  filter: none;
+  filter: brightness(0) opacity(75%);
+}
+
+.section-hero .featured-logo-link {
+  color: inherit;
+}
+
+
+/* ------------------------ */
+/* SERVICES SECTION */
+/* ------------------------ */
+
+/* .section-services {
+  padding: 9.6rem 0;
+}
+
+.service-boxes {
+  margin-bottom: 2.4rem;
+}
+
+.service-box {
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.1);
+}
+
+.service-photo {
+  width: 100%;
+  margin-bottom: 3.2rem;
+}
+
+.service-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  padding: 0 3.2rem 3.2rem 3.2rem;
+}
+
+.service-areas {
+  font-size: 1.6rem;
+  text-align: center;
 }
