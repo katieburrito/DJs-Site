@@ -445,7 +445,7 @@
   background-color: #183d5d;
 }
 
-.portfolio-gallery {
+/* .portfolio-gallery {
   width: 100rem;
   margin: 0 auto;
   display: grid;
@@ -462,6 +462,26 @@
   justify-content: center;
   transition: all 0.4s;
 
+  position: relative;
+} */
+
+.portfolio-gallery {
+  width: 79rem;
+  margin: 0 auto;
+  display: grid;
+  /* grid-template-columns: repeat(5, 1fr); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.portfolio-img-link-box:link,
+.portfolio-img-link-box:visited {
+  height: 25rem;
+  width: 25rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  transition: all 0.4s;
   position: relative;
 }
 
@@ -539,4 +559,38 @@
 .portfolio-link--all:hover,
 .portfolio-link--all:active {
   color: #e0e8f8;
+}
+
+
+/* ------------------------ */
+/* WHY DJ'S SECTION */
+/* ------------------------ */
+
+.section-why-djs {
+  padding: 9.6rem 0;
+  background-color: #e0e8f8;
+}
+
+.why-djs-boxes {
+  margin-bottom: 2.4rem;
+}
+
+.why-djs-box {
+  background-color: #fff;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 3.2rem 6.4rem rgba(24, 61, 93, 0.15);
+}
+
+.why-djs-icon {
+  width: 5rem;
+  color: #951212;
+  margin: 3.2rem auto;
+  display: block;
+}
+
+.why-djs-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  padding: 0 2.4rem 3.2rem 2.4rem;
 }
