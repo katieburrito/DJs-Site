@@ -201,3 +201,21 @@ body {
   /* box-shadow: inset 0 0 0 2px #183d5d; */
   box-shadow: none;
 }
+
+
+/* ------------------------ */
+/* LINKS */
+/* ------------------------ */
+
+.external-link:link,
+.external-link:visited {
+  color: #183d5d;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.external-link:hover,
+.external-link:active {
+  color: #b62e0f;
+  text-decoration: none;
+}

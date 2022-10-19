@@ -6,10 +6,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2.4rem 6.4rem 0 6.4rem;
+  max-width: 180rem;
+  margin: 0 auto;
   /* background-color: #edf6fd; */
   /* background-color: #e0e8f8; */
   /* background-color: #fff; */
-  padding: 2.4rem 6.4rem 0 6.4rem;
 }
 
 .djs-logo {
@@ -58,7 +60,8 @@
 }
 
 .hero-emphasis {
-
+  font-family: 'Birthstone Bounce', cursive;
+  font-size: 7.4rem;
   /* gradient text below */
   /* background: linear-gradient(#951212, #b62e0f);
   -webkit-background-clip: text;
@@ -69,8 +72,6 @@
   background-position: 0 100%;
   background-size: 100% 4px;
   background-repeat: repeat-x; */
-  font-family: 'Birthstone Bounce', cursive;
-  font-size: 7.4rem;
 }
 
 /* position: relative;
@@ -535,6 +536,7 @@
 .popup-link:visited {
   color: #183d5d;
   transition: all 0.3s;
+  font-weight: 600;
 }
 
 .popup-link:hover,
@@ -542,8 +544,6 @@
   color: #b62e0f;
   text-decoration: none;
 }
-
-
 
 
 /* ------------------------ */
