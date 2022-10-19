@@ -29,13 +29,19 @@
   font-size: 1.8rem;
   text-decoration: none;
   color: inherit;
+  padding: 0 0.6rem 0.3rem 0.6rem;
+  border-bottom: 2px solid transparent;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .nav-item:hover,
 .nav-item:active {
   color: #b62e0f;
-  /* color: #951212; */
+  border-bottom: 2px solid #b62e0f;
 }
 
 
@@ -434,7 +440,7 @@
 
 .why-djs-icon {
   width: 5rem;
-  color: #951212;
+  color: #b62e0f;
   margin: 3.2rem auto;
   display: block;
 }
@@ -530,19 +536,6 @@
 .step-description {
   font-size: 1.8rem;
   line-height: 1.6;
-}
-
-.popup-link:link,
-.popup-link:visited {
-  color: #183d5d;
-  transition: all 0.3s;
-  font-weight: 600;
-}
-
-.popup-link:hover,
-.popup-link:active {
-  color: #b62e0f;
-  text-decoration: none;
 }
 
 
