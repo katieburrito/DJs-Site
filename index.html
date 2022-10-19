@@ -6,73 +6,573 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DJ's Home Improvements</title>
+
+  <link rel="icon" type="image/png" href="img/djs-favicon-design-text.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700;800&family=Red+Hat+Text:wght@400;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Birthstone+Bounce:wght@500&family=Source+Sans+Pro:wght@400;600;700&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="sass/main.css">
+
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/general.css" type="text/css">
 </head>
 
 <body>
-  <nav class="navbar">
 
-    <section class="container navbar__box">
-
-      <!-- <div class="navbar-test-box-1">1</div>
-      <div class="navbar-test-box-2">2</div>
-      <div class="navbar-test-box-3">3</div> -->
-
-      <ul class="navbar__list-left">
-        <li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">About DJ's</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Portfolio</a></li>
+  <header class="header">
+    <img class="djs-logo" src="img/djs-logo.png" alt="DJ's logo">
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#" class="nav-item">Home</a></li>
+        <li><a href="#" class="nav-item">About DJ's</a></li>
+        <li><a href="#" class="nav-item">Portfolio</a></li>
+        <li><a href="#" class="nav-item">Contact</a></li>
+        <li><a href="#" class="nav-item">Client Portal</a></li>
       </ul>
+    </nav>
+  </header>
 
-      <a href="#" class="navbar__logo">
-        <img class="navbar__logo-img" src="img/djs-logo.png" alt="DJ's logo">
-      </a>
+  <main>
+    <section class="section-hero">
 
-      <ul class="navbar__list-right">
-        <li class="navbar__item"><a href="#" class="navbar__link">Contact Us</a></li>
-        <li class="navbar__item"><a href="#" class="navbar__link">Homeowner Login</a></li>
-      </ul>
+      <div class="hero container grid-container--2cols">
+
+        <div class="hero-text-box">
+          <h1 class="heading-primary">We make your
+            <span class="hero-emphasis">dream</span> <span class="hero-emphasis hero-emphasis--shorter">home</span> a
+            reality!
+          </h1>
+
+          <!-- Welcome to your dream home
+          We have proudly served as Long Island's premier home remodeler for over 30 years, creating extraordinary, one-of-a-kind homes that our clients love. Together, let's turn your house into your dream home.  -->
+          <!-- <h1 class="heading-primary">We make your dream home a reality by turning your reality into your dream home!</h1> -->
+          <!-- As Long Island's premier remodeling and design firm, DJ's Home Improvements offers customized home remodeling with the guidance of seasoned industry experts. DJ's has over 30 years of experience in delighting clients by creating their dream homes. -->
+
+          <p class="hero-description">As Long Island's premier remodeling and design firm for over 30 years, DJ's Home
+            Improvements proudly offers customized home
+            remodeling with the guidance of seasoned industry experts. Together, let's turn your house into your dream
+            home.
+          </p>
+          <a href="#" class="btn btn--primary margin-right-sm">See Our Work &darr;</a>
+          <a href="#" class="btn btn--secondary">Meet Our Team</a>
+
+          <div class="featured-logos-group">
+
+            <a class="featured-logo-link"
+              href="https://www.houzz.com/professionals/design-build-firms/dj-s-home-improvements-pfvwus-pf~1291972437?/credentials"
+              target="_blank">
+              <p>Best of</p>
+              <img class="featured-logo" src="img/houzz-logo-2.png" alt="houzz logo">
+            </a>
+
+            <a class="featured-logo-link" href="http://www.house-magazine.net/home" target="_blank">
+              <p>Featured in&colon;</p>
+              <img class="featured-logo" src="img/house-logo.png" alt="house magazine logo">
+            </a>
+
+            <a class="featured-logo-link" href="https://remodelingdoneright.nari.org/remodelers/12544193/Details/"
+              target="_blank">
+              <img class="featured-logo" src="img/nari-coty-awards-logo.png" alt="nari logo">
+              <p>Winner</p>
+            </a>
+
+            <a class="featured-logo-link"
+              href="https://www.us.kohler.com/us/?id=ps_adw_kbus_ongoing-paid-search_2021_USSEMPLBPureBrandEMBCOREkohler&kwd=kohler&p_code=SPRING&id=ps_goo_brand=kbus_2022_campaign=kbus_dtc_ps_buy_sem_core_br_em_all_2022_goo_kwd=&ds_cid=71700000031025954&ds_agid=58700003767546592&ds_kid=43700029596805473&ds_clid=Cj0KCQjw_4-SBhCgARIsAAlegrXpIYSEGf_3yav8HMfZJCxaW-5PRCUprefczRkT8ezs_csvip8vXzAaAqo3EALw_wcB&ds_rl=1257510&gclid=Cj0KCQjw_4-SBhCgARIsAAlegrXpIYSEGf_3yav8HMfZJCxaW-5PRCUprefczRkT8ezs_csvip8vXzAaAqo3EALw_wcB&gclsrc=aw.ds"
+              target="_blank">
+              <img class="featured-logo" src="img/kohler-logo.png" alt="kohler logo">
+              <p>Partner Network</p>
+            </a>
+
+          </div>
+
+        </div>
+
+        <div class="hero-img-box">
+          <img class="hero-img" src="img/living.png" alt="remodeled living room photo">
+        </div>
+
+      </div>
 
     </section>
 
+    <!-- 3x3 gallery below -->
+    <!-- <section class="section-portfolio">
+      <div class="container">
+        <p class="subheading subheading--dark-ground">Portfolio</p>
+        <h2 class="heading-secondary heading-secondary--dark-ground">Our work speaks for itself.</h2>
+      </div>
 
-  </nav>
+      <div class="portfolio-gallery">
 
-  <main class="container">
 
-    <section class="hero">
-      <img class="hero__photo-1" src="img/kitchen.png" alt="beautiful kitchen photo">
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/bath.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
 
-      <div class="hero__textbox">
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/kitchen.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
 
-        <h1 class="heading-primary u-margin-bottom-small">Welcome to your dream home</h1>
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/living.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
 
-        <p class="hero__message">
-          We have proudly served as Long Island's premier home remodeler for over 30 years, creating extraordinary,
-          one-of-a-kind homes that our clients love. Together, let's turn your house into your dream home.
-        </p>
 
-        <div class="hero__cta">
-          <a href="#" class="btn hero__cta-portfolio">See Our Work</a>
-          <a href="#" class="btn hero__cta-contact">Contact Us</a>
-        </div>
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/living.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img src="img/testimonial-el.png" alt="example work photo" class="portfolio-img">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img src="img/testimonial-csk-ws.png" alt="example work photo" class="portfolio-img">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+
+        <a class="portfolio-img-link-box" href="#">
+          <img src="img/testimonial-el.png" alt="example work photo" class="portfolio-img">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/kitchen.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/bath.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+      </div>
+
+      <a href="#" class="portfolio-link--all">View more of our unrivaled work &rarr;</a>
+
+    </section> -->
+
+    <!-- 5x5 gallery below -->
+    <section class="section-portfolio">
+      <div class="container">
+        <p class="subheading subheading--dark-ground">Portfolio</p>
+        <h2 class="heading-secondary heading-secondary--dark-ground">Our work speaks for itself.</h2>
+      </div>
+
+      <div class="portfolio-gallery">
+
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/bath.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/kitchen.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/living.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img src="img/testimonial-csk-ws.png" alt="example work photo" class="portfolio-img">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+        <a class="portfolio-img-link-box" href="#">
+          <img src="img/testimonial-el.png" alt="example work photo" class="portfolio-img">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/living.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img src="img/testimonial-el.png" alt="example work photo" class="portfolio-img">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img src="img/testimonial-csk-ws.png" alt="example work photo" class="portfolio-img">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/kitchen.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/bath.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+
+        <a class="portfolio-img-link-box" href="#">
+          <img src="img/testimonial-el.png" alt="example work photo" class="portfolio-img">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/kitchen.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/bath.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img class="portfolio-img" src="img/living.png" alt="example work photo">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+        <a class="portfolio-img-link-box" href="#">
+          <img src="img/testimonial-csk-ws.png" alt="example work photo" class="portfolio-img">
+          <p class="portfolio-project-link">See more of this project</p>
+        </a>
+
+      </div>
+
+      <a href="#" class="portfolio-link--all">View more of our unrivaled work &rarr;</a>
+
+    </section>
+
+    <!-- View more of our unrivaled work.
+    View more of our unforgettable work.
+    View more of our unparalleled work.
+    View more of our industry-leading work.
+    View more our of our oustanding work.
+    View more of our superior work.
+    View more of highly acclaimed work. -->
+
+    <section class="section-testimonials">
+
+      <div class="container">
+        <p class="subheading">Testimonials</p>
+        <h2 class="heading-secondary">Homeowners love DJ's!</h2>
+      </div>
+
+      <div class="testimonials">
+
+        <a href="#" class="testimonial-card">
+          <img src="img/testimonial-el.png" alt="E.L's kitchen photo" class="testimonial-img">
+          <div class="testimonial-text-group">
+            <blockquote class="testimonial-text">&ldquo;<strong>My family and I have been happily using our accessible
+                kitchen</strong>
+              for over a
+              year now, but it still seems
+              new and
+              exciting each time we work in there. I'm so happy to have a place where I can spend quality time with my
+              mother
+              when I come home from college. With her guidance, I'm improving my cooking skills and making food for
+              our
+              family
+              to enjoy.&rdquo;</blockquote>
+            <p class="testimonial-author">&mdash; E.L., West Babylon, NY</p>
+          </div>
+        </a>
+
+        <a href="#" class="testimonial-card">
+          <div class="testimonial-text-group">
+            <blockquote class="testimonial-text">&ldquo;Our house is ultra beautiful thanks to your vision &
+              craftsmanship. We were very skeptical and shopped around, but when you guys came to the house, it was a no
+              brainer. Everyday your crew left the worksite as clean as could be & they treated my house as if it were
+              their own. From the first week, I had the utmost confidence in you & your crew. It is a truly expertly
+              crafted kitchen with every attention to detail. Terri & I are truly happy & very impressed with the
+              workmanship, cleanliness, sincere concern & attention paid to our needs. <strong>Things couldn't have gone
+                any
+                smoother with the outcome being above expectation.</strong>&rdquo;</blockquote>
+            <p class="testimonial-author">&mdash; Michael, Franklin Square, NY</p>
+          </div>
+          <img src="img/testimonial-michael.png" alt="Michael's remodel photo" class="testimonial-img">
+        </a>
+
+        <a href="#" class="testimonial-card">
+          <img src="img/testimonial-csk-ws.png" alt="J.R.'s remodel photo" class="testimonial-img">
+          <div class="testimonial-text-group">
+            <blockquote class="testimonial-text">&ldquo;Vita and Jerry did a number of renovations for my family and we
+              could not be more pleased.
+              <strong>The attention to detail and consideration for our time were impeccable.</strong> The
+              quality of the work was also outstanding. I would not hesitate one bit to recommend DJ's for any and all
+              home improvement needs; my family refuses to use anyone else.&rdquo;</blockquote>
+            <p class="testimonial-author">&mdash; J.R., Woodbury, NY</p>
+          </div>
+        </a>
+
+        <!-- <a href="#" class="testimonial-card">
+          <div class="testimonial-text-group">
+            <blockquote class="testimonial-text">&ldquo;On behalf of my parents please accept our most heartfelt thanks
+              for a job well done. <strong>We found the service provided by DJ's Home Improvements to be
+                exceptional</strong>, and we would
+              certainly look forward to working with you again when the need arises. Please let Dennis and Val know that
+              we thought that they were very professional, hardworking, and courteous. It was a pleasure having them do
+              the work.&rdquo;</blockquote>
+            <p class="testimonial-author">&mdash; J.O., New Hyde Park, NY</p>
+          </div>
+          <img src="img/testimonial-jo.png" alt="J.O.'s remodel photo" class="testimonial-img">
+        </a> -->
+
+        <!-- <a href="#" class="testimonial-card">
+          <img src="img/testimonial-csk-ws.png" alt="C.S.K and W.S.'s bathroom photo" class="testimonial-img">
+          <div class="testimonial-text-group">
+            <blockquote class="testimonial-text">&ldquo;As clients of yours for almost ten years, we have come to know
+              that <strong>DJ's Home Improvements is special and unique in every way</strong> - from inception to
+              completion every facet of
+              a project is analyzed, planned for and executed. No detail is overlooked or left to chance and the
+              dedication and work ethic of everyone on your staff is beyond reproach.
+              Although our project took place seventy-five miles away, we were never concerned about the final outcome.
+              Our two bathrooms are absolutely perfect in every way and we couldn't have asked for more. The workmanship
+              is outstanding and the attention to detail is incomparable. You exceeded our expectations on every level
+              and
+              were always available to answer our questions and accomodate our requests...
+              Over the years we have contracted with D.J.'s on five different projects and we look forward to working
+              with
+              you again in the future. Keep up the great work - you have so much to be proud of!!&rdquo;</blockquote>
+            <p class="testimonial-author">&mdash; C.S.K. & W.S., Cutchogue, NY</p>
+          </div>
+        </a> -->
+
+        <a href="#" class="testimonials-link">Read more kind words from happy DJ's customers &rarr;</a>
 
 
       </div>
 
-      <img class="hero__photo-2" src="img/bath.png" alt="beautiful bathroom photo">
 
 
     </section>
 
+    <section class="section-why-djs">
+      <div class="container">
+
+        <div class="services-title">
+          <p class="subheading">Why choose us?</p>
+          <h2 class="heading-secondary">The DJ's Difference</h2>
+        </div>
+
+        <div class="why-djs-boxes grid-container--4cols">
+
+          <div class="why-djs-box">
+            <svg class="why-djs-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+            </svg>
+            <h3 class="heading-tertiary">Experienced</h3>
+            <p class="why-djs-description">
+              With over 30 years of industry experience, we personally guide you through every step of the
+              decision-making process to arrive at a design that matches your desired look and budget.
+            </p>
+          </div>
+
+          <div class="why-djs-box">
+            <svg class="why-djs-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819" />
+            </svg>
+            <h3 class="heading-tertiary">Forthright</h3>
+            <p class="why-djs-description">
+              We provide detailed digital renderings of the proposed design to allow you to visualize the final outcome
+              from the very beginning.
+            </p>
+          </div>
+
+          <div class="why-djs-box">
+            <svg class="why-djs-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z" />
+            </svg>
+            <h3 class="heading-tertiary">Warranty</h3>
+            <p class="why-djs-description">
+              We believe in protecting your investments, which is why we provide a 5 year warranty on labor.
+            </p>
+          </div>
+
+          <div class="why-djs-box">
+            <svg class="why-djs-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
+            </svg>
+            <h3 class="heading-tertiary">Accredited</h3>
+            <p class="why-djs-description">
+              We are members of the
+              <a class="why-djs-link" href="https://www.nari.org/" target="_blank">
+                National Association of the Remodeling Industry (NARI)</a>
+              and the
+              <a class="why-djs-link" href=https://nkba.org/" target="_blank">
+                National Kitchen and Bath Association (NKBA)</a>
+              and licensed and insured in Nassau and Suffolk Counties.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section-how">
+      <div class="container">
+        <div class="section-how--header">
+          <p class="subheading">How it works</p>
+          <h2 class="heading-secondary">The DJ's Process</h2>
+        </div>
+
+        <div class="container grid-container--3cols">
+          <div class="how-to-step">
+            <p class="step-number">01</p>
+            <h3 class="step-title">Initial Phone Meeting</h3>
+            <p class="step-description">Conducted by our in house team of remodeling experts. On the call, we will
+              discuss
+              project scope, budget and time frame.</p>
+          </div>
+          <div class="how-to-step">
+            <p class="step-number">02</p>
+            <h3 class="step-title">Free In-Home Consultation</h3>
+            <p class="step-description">A DJ's professional will meet you in your home to better understand your project
+              vision, discuss budget, and take preliminary measurements.</p>
+          </div>
+          <div class="how-to-step">
+            <p class="step-number">03</p>
+            <h3 class="step-title">Proposal</h3>
+            <p class="step-description">Following initial consultations, we provide a proposal for the cost of materials
+              and labor needed to make your project a reality.</p>
+          </div>
+          <div class="how-to-step">
+            <p class="step-number">04</p>
+            <h3 class="step-title">Preparation</h3>
+            <p class="step-description">Upon your approval, DJ's begins preparing necessary plans, digital designs,
+              required permits, and your chosen material orders through our pre-qualified suppliers.</p>
+          </div>
+          <div class="how-to-step">
+            <p class="step-number">05</p>
+            <h3 class="step-title">Scheduling</h3>
+            <p class="step-description">We schedule an approximate start date after all materials have been ordered and
+              product delivery dates are established.</p>
+          </div>
+          <div class="how-to-step">
+            <p class="step-number">06</p>
+            <h3 class="step-title">Construction</h3>
+            <p class="step-description">
+              To ensure your project runs <br> smoothly and efficiently, we share project details with you every step of
+              the
+              way via our
+              <a class="popup-link" href="#">client portal,</a>
+              <!-- Buildertrend- video link popup on desktop -->
+
+              so you can relax, knowing your project is in good hands!</p>
+          </div>
+
+        </div>
+
+
+        <!-- put even larger step number behind instead of above? and in place of numbers here put icons? -->
+
+        <!-- background photo for the how it works section to make it less boring? -->
+
+        <!-- this should probably go farther down the page? most important is portfolio, then testimonials, then "features/ why dj's", so that should probably come before the process -->
+
+
+      </div>
+
+
+    </section>
+
+    <!-- maybe put the CTA contact form here? with navy or red background-->
+
+    <!-- <section class="section-featured-in">
+      <div class="container">
+        <h2 class="heading-featured">Our Awards &amp; Press Features&colon;</h2>
+        <div class="featured-logos-group">
+
+          <a class="featured-logo-link"
+            href="https://www.houzz.com/professionals/design-build-firms/dj-s-home-improvements-pfvwus-pf~1291972437?/credentials"
+            target="_blank">
+            <p>Best of</p>
+            <img class="featured-logo" src="img/houzz-logo-2.png" alt="houzz logo">
+          </a>
+
+          <a class="featured-logo-link" href="http://www.house-magazine.net/home" target="_blank">
+            <p>Featured in&colon;</p>
+            <img class="featured-logo" src="img/house-logo.png" alt="house magazine logo">
+          </a>
+
+          <a class="featured-logo-link" href="https://remodelingdoneright.nari.org/remodelers/12544193/Details/"
+            target="_blank">
+            <img class="featured-logo" src="img/nari-coty-awards-logo.png" alt="nari logo">
+            <p>Winner</p>
+          </a>
+
+        </div>
+      </div>
+    </section> -->
+
+    <!-- might not actually need this services/ card section, but it's good practice from the course -->
+    <!-- <section class="section-services">
+      <div class="container">
+
+        <div class="services-title">
+          <p class="subheading">Our Services</p>
+          <h2 class="heading-secondary">What can DJ's do for you?</h2>
+        </div>
+
+        <div class="service-boxes grid-container--3cols">
+
+          <div class="service-box">
+            <img class="service-photo" src="../img/bath.png" alt="bathroom service-photo">
+            <h3 class="heading-tertiary">Extensions</h3>
+            <p class="service-description">
+              Expanding your home's living space, DJ's Home Improvements has the expertise to handle
+              every
+              aspect of this complicated residential upgrade to leave you with a beautiful new space.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <img class="service-photo" src="../img/progress.png" alt="bathroom service-photo">
+            <h3 class="heading-tertiary">Dormers</h3>
+            <p class="service-description">
+              Adding space to your home on the second or even third story offers many structural challenges. Whether you
+              want to bump out, move up, or dig down, you can trust our team of experts and industry partners to guide
+              you in the right direction.
+            </p>
+          </div>
+
+          <div class="service-box">
+            <img class="service-photo" src="../img/kitchen.png" alt="bathroom service-photo">
+            <h3 class="heading-tertiary">Remodeling</h3>
+            <p class="service-description">
+              Whether you're thinking of just changing your countertops or completely re-arranging and
+              gutting everything, DJ's is ready to help!
+            </p>
+          </div>
+
+        </div>
+
+        <p class="service-areas">Our service areas include all of Nassau and Suffolk Counties</p>
+
+      </div>
+    </section> -->
 
 
   </main>
+
 
 
 </body>
