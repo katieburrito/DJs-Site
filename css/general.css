@@ -38,7 +38,7 @@ GREYS
 
 --- 05 BORDER RADIUS
 - Buttons: 4px
-- Larger Boxes: 9px
+- Larger Boxes: 9px- took out in favor of tighter corners (4px also)
 
 
 --- 06 WHITESPACE
@@ -58,6 +58,11 @@ Additional (break system rules)
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #b62e0f;
 }
 
 html {
@@ -186,6 +191,10 @@ body {
   background-color: #951212;
 }
 
+.btn.btn-primary:focus {
+  box-shadow: 0 0 0 0.8rem #183d5d;
+}
+
 .btn--secondary:link,
 .btn--secondary:visited {
   /* background-color: #fff; */
@@ -200,6 +209,11 @@ body {
   color: #183d5d;
   /* box-shadow: inset 0 0 0 2px #183d5d; */
   box-shadow: none;
+}
+
+.btn.btn-secondary:focus {
+  /* outline: none; */
+  box-shadow: 0 0 0 0.8rem #b62e0f;
 }
 
 

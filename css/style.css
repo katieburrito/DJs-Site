@@ -45,6 +45,7 @@
 }
 
 
+
 /* ------------------------ */
 /* HERO SECTION */
 /* ------------------------ */
@@ -305,6 +306,7 @@
 .portfolio-link--all:hover,
 .portfolio-link--all:active {
   color: #e0e8f8;
+  color: #f2aaaa;
 }
 
 
@@ -342,7 +344,10 @@
 .testimonial-card:active {
   background-color: #444;
   transform: scale(1.1);
-  /* margin: 2rem 0; */
+}
+
+.testimonials .testimonial-card:focus {
+  box-shadow: 0 0 0 0.8rem #183d5d;
 }
 
 .testimonial-img {
@@ -424,7 +429,13 @@
 
 .section-why-djs {
   padding: 9.6rem 0;
-  background-color: #e0e8f8;
+  /* background-color: #e0e8f8; */
+  background-image:
+    linear-gradient(#e0e8f8b1, #e0e8f8b1),
+    url(../img/testimonial-michael.png);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100%;
 }
 
 .why-djs-boxes {
@@ -434,8 +445,9 @@
 .why-djs-box {
   background-color: #fff;
   border-radius: 9px;
+  border-radius: 4px;
   overflow: hidden;
-  box-shadow: 0 3.2rem 6.4rem rgba(24, 61, 93, 0.15);
+  box-shadow: 0 3.2rem 6.4rem rgba(24, 61, 93, 0.2);
 }
 
 .why-djs-icon {
@@ -537,6 +549,120 @@
   font-size: 1.8rem;
   line-height: 1.6;
 }
+
+
+/* ------------------------ */
+/* CTA SECTION */
+/* ------------------------ */
+
+.section-cta {
+  padding: 7.2rem 0 9.6rem 0;
+}
+
+.container--cta {
+  background-color: #183d5d;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 6.4rem;
+}
+
+.heading-tertiary.cta-heading {
+  color: #fff;
+}
+
+.cta-greeting {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #666;
+  color: #e0e8f8;
+  margin-bottom: 3.2rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  margin-bottom: 1.4rem;
+}
+
+.cta-label {
+  color: #e0e8f8;
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.cta-text-box {
+  border: none;
+  display: block;
+  width: 100%;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #333;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.cta-email-container,
+.cta-message-container,
+.cta-btn {
+  grid-column: 1 / -1;
+}
+
+.cta-remodel-type {
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+.cta-remodel-type--label {
+  color: #fff;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.cta-remodel-type--button:hover {
+  cursor: pointer;
+}
+
+.cta-btn {
+  color: inherit;
+  font-family: inherit;
+  background-color: #f2aaaa;
+  font-size: 1.6rem;
+  border: none;
+  padding: 0.3rem 3rem;
+  border-radius: 3px;
+  transition: all 0.3s;
+}
+
+.cta-btn:hover {
+  cursor: pointer;
+  background-color: #e0e8f8;
+}
+
+.cta-response {
+  font-size: 1.4rem;
+  line-height: 1.2;
+  color: #e0e8f8;
+  font-family: inherit;
+  font-family: ;
+}
+
+
+
+
+.cta-form *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem #b62e0f;
+}
+
+
+
+
+
+
+
 
 
 /* ------------------------ */
