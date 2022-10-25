@@ -22,7 +22,10 @@
 <body>
 
   <header class="header">
-    <img class="djs-logo" src="img/djs-logo.png" alt="DJ's logo">
+    <a href="#">
+      <img class="djs-logo" src="img/djs-logo.png" alt="DJ's logo">
+    </a>
+
     <nav>
       <ul class="nav-list">
         <li><a href="#" class="nav-item">Home</a></li>
@@ -438,7 +441,7 @@
           <div class="how-to-step">
             <p class="step-number">01</p>
             <h3 class="step-title">Initial Phone Meeting</h3>
-            <p class="step-description">Conducted by our in house team of remodeling experts. On the call, we will
+            <p class="step-description">Conducted by our in-house team of remodeling experts. On the call, we will
               discuss
               project scope, budget and time frame.</p>
           </div>
@@ -503,7 +506,6 @@
 
         <form action="#" class="cta-form">
 
-
           <div class="cta-name-container">
             <label class="cta-label" for="client-name">Your Name: </label>
             <input class="cta-text-box" id="client-name" type="text" required>
@@ -519,41 +521,37 @@
             <input class="cta-text-box" id="client-email" type="email" required>
           </div>
 
-
-          <!-- <fieldset class="cta-remodel-type">
+          <fieldset class="cta-remodel-type-container">
             <legend class="cta-label">What type of remodel are you interested in?</legend>
-
             <div>
-              <input class="cta-remodel-type--button" type="radio" id="kitchen" name="remodel-type" value="kitchen"
-                checked>
+              <input class="cta-remodel-type--button" type="radio" id="kitchen" name="remodel-type" value="kitchen">
               <label class="cta-remodel-type--label" for="kitchen">Kitchen</label>
             </div>
             <div>
-              <input class="cta-remodel-type--button" type="radio" id="bath" name="remodel-type" value="bath" checked>
+              <input class="cta-remodel-type--button" type="radio" id="bath" name="remodel-type" value="bath">
               <label class="cta-remodel-type--label" for="bath">Bathroom</label>
             </div>
             <div>
               <input class="cta-remodel-type--button" type="radio" id="living-bed" name="remodel-type"
-                value="living-bed" checked>
+                value="living-bed">
               <label class="cta-remodel-type--label" for="living-bed">Living Room/ Bedroom</label>
             </div>
             <div>
-              <input class="cta-remodel-type--button" type="radio" id="exterior" name="remodel-type" value="exterior"
-                checked>
+              <input class="cta-remodel-type--button" type="radio" id="exterior" name="remodel-type" value="exterior">
               <label class="cta-remodel-type--label" for="exterior">Exterior</label>
             </div>
             <div>
-              <input class="cta-remodel-type--button" type="radio" id="other" name="remodel-type" value="other" checked>
+              <input class="cta-remodel-type--button" type="radio" id="other" name="remodel-type" value="other">
               <label class="cta-remodel-type--label" for="other">Other</label>
             </div>
-          </fieldset> -->
+          </fieldset>
 
           <div class="cta-message-container">
             <label class="cta-label" for="client-message">Tell us about your project: </label>
-            <textarea class="cta-text-box" rows="2" id="client-message" type="text">Hello!</textarea>
+            <textarea class="cta-text-box" rows="2" id="client-message" type="text"></textarea>
           </div>
 
-          <button class="cta-btn" type="submit">Submit</button>
+          <button class="cta-btn" type="submit">Send Message</button>
 
         </form>
 
@@ -570,88 +568,28 @@
 
     </section>
 
-
-    <!-- maybe put the CTA contact form here? with navy or red background-->
-
-    <!-- <section class="section-featured-in">
-      <div class="container">
-        <h2 class="heading-featured">Our Awards &amp; Press Features&colon;</h2>
-        <div class="featured-logos-group">
-
-          <a class="featured-logo-link"
-            href="https://www.houzz.com/professionals/design-build-firms/dj-s-home-improvements-pfvwus-pf~1291972437?/credentials"
-            target="_blank">
-            <p>Best of</p>
-            <img class="featured-logo" src="img/houzz-logo-2.png" alt="houzz logo">
-          </a>
-
-          <a class="featured-logo-link" href="http://www.house-magazine.net/home" target="_blank">
-            <p>Featured in&colon;</p>
-            <img class="featured-logo" src="img/house-logo.png" alt="house magazine logo">
-          </a>
-
-          <a class="featured-logo-link" href="https://remodelingdoneright.nari.org/remodelers/12544193/Details/"
-            target="_blank">
-            <img class="featured-logo" src="img/nari-coty-awards-logo.png" alt="nari logo">
-            <p>Winner</p>
-          </a>
-
-        </div>
-      </div>
-    </section> -->
-
-    <!-- might not actually need this services/ card section, but it's good practice from the course -->
-    <!-- <section class="section-services">
-      <div class="container">
-
-        <div class="services-title">
-          <p class="subheading">Our Services</p>
-          <h2 class="heading-secondary">What can DJ's do for you?</h2>
-        </div>
-
-        <div class="service-boxes grid-container--3cols">
-
-          <div class="service-box">
-            <img class="service-photo" src="../img/bath.png" alt="bathroom service-photo">
-            <h3 class="heading-tertiary">Extensions</h3>
-            <p class="service-description">
-              Expanding your home's living space, DJ's Home Improvements has the expertise to handle
-              every
-              aspect of this complicated residential upgrade to leave you with a beautiful new space.
-            </p>
-          </div>
-
-          <div class="service-box">
-            <img class="service-photo" src="../img/progress.png" alt="bathroom service-photo">
-            <h3 class="heading-tertiary">Dormers</h3>
-            <p class="service-description">
-              Adding space to your home on the second or even third story offers many structural challenges. Whether you
-              want to bump out, move up, or dig down, you can trust our team of experts and industry partners to guide
-              you in the right direction.
-            </p>
-          </div>
-
-          <div class="service-box">
-            <img class="service-photo" src="../img/kitchen.png" alt="bathroom service-photo">
-            <h3 class="heading-tertiary">Remodeling</h3>
-            <p class="service-description">
-              Whether you're thinking of just changing your countertops or completely re-arranging and
-              gutting everything, DJ's is ready to help!
-            </p>
-          </div>
-
-        </div>
-
-        <p class="service-areas">Our service areas include all of Nassau and Suffolk Counties</p>
-
-      </div>
-    </section> -->
-
-
   </main>
 
-  <!-- why links break: -->
-  <!-- https://maximorlov.com/deploying-to-github-pages-dont-forget-to-fix-your-links/ -->
+  <footer>
+    <p class="copyright">Copyright DJ's Home Improvements &copy; 2022</p>
+
+
+  </footer>
+
+
+  <!-- 
+  Logo
+  Social Links
+  Copyright
+
+
+  About DJ's Link to page
+  Contact Info condensed and link to page
+other links from top nav? services, gallery, etc
+  Existing Client Portal- Buildertrend
+
+  Newsletter Sign Up
+ -->
 
 
 </body>
