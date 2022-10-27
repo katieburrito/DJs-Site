@@ -9,13 +9,10 @@
   padding: 2.4rem 6.4rem 0 6.4rem;
   max-width: 180rem;
   margin: 0 auto;
-  /* background-color: #edf6fd; */
-  /* background-color: #e0e8f8; */
-  /* background-color: #fff; */
 }
 
 .djs-logo {
-  height: 12rem;
+  height: 14rem;
 }
 
 .nav-list {
@@ -27,6 +24,7 @@
 .nav-item:link,
 .nav-item:visited {
   font-size: 1.8rem;
+  font-weight: 600;
   text-decoration: none;
   color: inherit;
   padding: 0 0.6rem 0.3rem 0.6rem;
@@ -108,14 +106,16 @@
 
 .featured-logos-group {
   display: flex;
-  gap: 7.2rem;
-  justify-content: center;
+  gap: 3.8rem;
+  margin-top: 6.4rem;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .featured-logo {
   height: 3.2rem;
-  filter: brightness(0) invert(1);
+  filter: brightness(0) opacity(75%);
+
 }
 
 .featured-logo-link:link,
@@ -123,8 +123,7 @@
   font-size: 1.4rem;
   font-weight: 600;
   text-decoration: none;
-  color: #666;
-  color: #fff;
+  color: inherit;
   text-transform: uppercase;
   display: flex;
   flex-direction: column;
@@ -136,23 +135,6 @@
 .featured-logo-link:hover,
 .featured-logo-link:active {
   transform: scale(1.2);
-}
-
-/* modified below to use in header instead of separate section . */
-
-.section-hero .featured-logos-group {
-  margin-top: 6.4rem;
-  gap: 3.8rem;
-  justify-content: flex-start;
-}
-
-.section-hero .featured-logo {
-  filter: none;
-  filter: brightness(0) opacity(75%);
-}
-
-.section-hero .featured-logo-link {
-  color: inherit;
 }
 
 .hero-img-box {
@@ -192,17 +174,16 @@
 
 /* for 3x5 gallery, use below two rules: */
 .portfolio-gallery {
-  width: 100rem;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 1.6rem;
 }
 
 .portfolio-img-link-box:link,
 .portfolio-img-link-box:visited {
-  height: 20rem;
-  width: 20rem;
+  height: 22rem;
+  /* width: 22rem; */
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -290,25 +271,6 @@
 /* border-radius: 4px; */
 /* transform: translate(0, -50%); */
 
-.portfolio-link--all:link,
-.portfolio-link--all:visited {
-  text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #fff;
-  text-align: center;
-  transition: all 0.3s;
-  margin: 4.8rem auto 0 auto;
-  display: block;
-  transition: all 0.3s;
-}
-
-.portfolio-link--all:hover,
-.portfolio-link--all:active {
-  color: #e0e8f8;
-  color: #f2aaaa;
-}
-
 
 /* ------------------------ */
 /* TESTIMONIALS SECTION */
@@ -342,7 +304,7 @@
 
 .testimonial-card:hover,
 .testimonial-card:active {
-  background-color: #444;
+  background-color: #333;
   transform: scale(1.1);
 }
 
@@ -407,21 +369,6 @@
   color: #888;
 }
 
-.testimonials-link:link,
-.testimonials-link:visited {
-  text-decoration: none;
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: inherit;
-  text-align: center;
-  transition: all 0.3s;
-}
-
-.testimonials-link:hover,
-.testimonials-link:active {
-  color: #b62e0f;
-}
-
 
 /* ------------------------ */
 /* WHY DJ'S SECTION */
@@ -439,7 +386,7 @@
 }
 
 .why-djs-boxes {
-  margin-bottom: 2.4rem;
+  margin-bottom: 4.8rem;
 }
 
 .why-djs-box {
@@ -573,7 +520,6 @@
 .cta-greeting {
   font-size: 1.6rem;
   line-height: 1.4;
-  color: #666;
   color: #e0e8f8;
   margin-bottom: 3.2rem;
 }
@@ -629,6 +575,7 @@
 .cta-btn {
   color: inherit;
   font-family: inherit;
+  font-weight: 600;
   background-color: #f2aaaa;
   background-color: #e0e8f8;
   /* box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4); */
@@ -650,7 +597,7 @@
   line-height: 1.2;
   color: #e0e8f8;
   font-family: inherit;
-  font-family: ;
+
 }
 
 .cta-form *:focus {
@@ -660,9 +607,104 @@
 
 
 /* ------------------------ */
-/* FOOTER SECTION */
+/* FOOTER */
 /* ------------------------ */
+
+.footer {
+  padding: 9.6rem 0;
+  background-color: #e0e8f8;
+  /* border-top: 1px solid #e0e8f8; */
+}
+
+.footer--grid {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  gap: 8rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.footer--contact-col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.address {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.djs-logo--footer {
+  height: 16rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.6rem;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 1.6rem;
+}
+
+.social-icon {
+  font-size: 2.6rem;
+  color: #333;
+}
+
+.social-icon:hover {
+  color: #b62e0f;
+}
 
 .copyright {
   font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.footer--newsletter--heading {
+  color: #183d5d;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.newsletter--message {
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.newsletter-sign-up--label {
+  display: block;
+  font-size: 1.4rem;
+  color: #183d5d;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+
+.newsletter-sign-up {
+  display: flex;
+  border: 2px solid #183d5d;
+}
+
+.newsletter-sign-up input {
+  border: none;
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.newsletter-sign-up button {
+  border: none;
+  border-left: 2px solid #183d5d;
+  background-color: #183d5d;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.newsletter-sign-up button:hover {
+  background-color: #e0e8f8;
+  color: #183d5d;
 }

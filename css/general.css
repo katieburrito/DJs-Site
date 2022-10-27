@@ -22,15 +22,16 @@ TINTS
 - #e0e8f8
 
 SHADES
+
 ACCENTS
-- #c71b1b
-OR
 - #b60f0f
-EVEN DARKER: #951212
+TINTS
+- #f2aaaa
+SHADES
+- #951212
 GREYS
 - #333
-- #444
-- #555
+- #fff
 
 --- 03 ICONS
 
@@ -140,7 +141,7 @@ body {
 }
 
 .heading-tertiary {
-  font-size: 2.8rem;
+  font-size: 2.6rem;
   font-weight: 600;
   color: #183d5d;
   text-align: center;
@@ -154,8 +155,6 @@ body {
   letter-spacing: 1.6px;
   margin-bottom: 1.8rem;
   font-weight: 600;
-  /* color: #c71b1b; */
-  color: #971400;
   color: #951212;
 }
 
@@ -187,7 +186,6 @@ body {
 
 .btn--primary:hover,
 .btn--primary:active {
-  background-color: #971400;
   background-color: #951212;
 }
 
@@ -226,10 +224,48 @@ body {
   color: #183d5d;
   transition: all 0.3s;
   font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 .external-link:hover,
 .external-link:active {
   color: #b62e0f;
   text-decoration: none;
+}
+
+.next-step-link:link,
+.next-step-link:visited {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  transition: all 0.3s;
+}
+
+.next-step-link:hover,
+.next-step-link:active {
+  color: #b62e0f;
+  text-decoration: none;
+}
+
+.next-step-link--dark-ground:link,
+.next-step-link--dark-ground:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e0e8f8;
+  text-align: center;
+  transition: all 0.3s;
+  margin: 4.8rem auto 0 auto;
+  display: block;
+  transition: all 0.3s;
+}
+
+.next-step-link--dark-ground:hover,
+.next-step-link--dark-ground:active {
+  color: #f2aaaa;
 }
