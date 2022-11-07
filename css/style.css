@@ -12,7 +12,7 @@
 }
 
 .djs-logo {
-  height: 14rem;
+  width: 22rem;
 }
 
 .nav-list {
@@ -99,7 +99,7 @@
 } */
 
 .hero-description {
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 1.5;
   margin-bottom: 3.2rem;
 }
@@ -382,7 +382,7 @@
     url(../img/testimonial-michael.png);
   background-repeat: no-repeat;
   background-position: 50%;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .why-djs-boxes {
@@ -440,7 +440,7 @@
   border-style: solid;
   border-image: linear-gradient(to bottom, #b62e0f, #f2aaaa) 5;
   border-right: none;
-  height: 34rem;
+  min-height: 35rem;
   width: 3rem;
   display: block;
   position: absolute;
@@ -636,7 +636,7 @@
 }
 
 .djs-logo--footer {
-  height: 16rem;
+  max-width: 30rem;
 }
 
 .social-links {
@@ -702,6 +702,7 @@
   cursor: pointer;
   flex-shrink: 0;
   font-weight: 600;
+  transition: all 0.3s;
 }
 
 .newsletter-sign-up button:hover {

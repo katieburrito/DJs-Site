@@ -1,0 +1,134 @@
+/* ---------------------------------------- */
+/* BELOW 1344px (Smaller desktops/ laptops) */
+/* ---------------------------------------- */
+
+/* first breakpont: 1350px /16px = ~84em */
+@media (max-width: 84em) {
+  .container {
+    max-width: 115rem;
+  }
+
+  .header {
+    max-width: 115rem;
+    padding: 2.4rem 0;
+  }
+
+  .section-hero {
+    padding: 6.4rem 0 12.8rem 0;
+  }
+
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .hero-emphasis {
+    font-size: 5.8rem;
+  }
+}
+
+/* ---------------------------------------- */
+/* BELOW 1232px (Landscape tablets) */
+/* ---------------------------------------- */
+@media (max-width:77em) {
+  html {
+    /* 9px (previously 10px) 9/16=56.25 */
+    font-size: 56.25%;
+  }
+
+  .heading-secondary {
+    font-size: 4.2rem;
+  }
+
+  .nav-list {
+    gap: 2.4rem;
+  }
+
+
+}
+
+/* ---------------------------------------- */
+/* BELOW 1040px*/
+/* ---------------------------------------- */
+@media (max-width:65em) {
+
+  .header,
+  .container {
+    max-width: 100rem;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .section-hero {
+    padding: 5.2rem 0;
+  }
+
+  .featured-logo {
+    height: 2.6rem;
+  }
+
+  .hero-img-box {
+    padding: 2rem 0.5rem;
+  }
+
+  .hero-img-box::after {
+    content: none;
+  }
+
+  .portfolio-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 0;
+    overflow: hidden;
+  }
+
+  .why-djs-boxes {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8rem;
+    grid-auto-rows: 1fr;
+  }
+
+  .why-djs-box:nth-child(odd) {
+    justify-self: right;
+  }
+
+  .why-djs-box {
+    width: 75%;
+  }
+
+  .why-djs-icon {
+    margin: 3.2rem auto 1.8rem auto;
+  }
+
+  .why-djs-description {
+    padding: 0 3.2rem 3.2rem 3.2rem;
+  }
+
+  .section-how .grid-container--3cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    grid-auto-rows: 1fr;
+  }
+
+  .how-to-step::before {
+    min-height: 31rem;
+  }
+
+  .step-description {
+    width: 80%;
+  }
+
+  .section-cta {
+    padding-top: 0;
+  }
+
+  .footer {
+    padding: 6.4rem 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 0.5fr 1fr;
+    gap: 10rem;
+  }
+
+}
