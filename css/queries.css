@@ -1,5 +1,5 @@
 /* ---------------------------------------- */
-/* BELOW 1344px (Smaller desktops/ laptops) */
+/* BELOW 1344px (Smaller desktops/ laptops/ landscape tablets) */
 /* ---------------------------------------- */
 
 /* first breakpont: 1350px /16px = ~84em */
@@ -27,29 +27,13 @@
 }
 
 /* ---------------------------------------- */
-/* BELOW 1232px (Landscape tablets) */
+/* BELOW 1168px (Landscape and Portrait Tablets) */
 /* ---------------------------------------- */
-@media (max-width:77em) {
+@media (max-width:73em) {
   html {
     /* 9px (previously 10px) 9/16=56.25 */
     font-size: 56.25%;
   }
-
-  .heading-secondary {
-    font-size: 4.2rem;
-  }
-
-  .nav-list {
-    gap: 2.4rem;
-  }
-
-
-}
-
-/* ---------------------------------------- */
-/* BELOW 1040px*/
-/* ---------------------------------------- */
-@media (max-width:65em) {
 
   .header,
   .container {
@@ -58,6 +42,10 @@
 
   .header {
     padding: 0;
+  }
+
+  .nav-list {
+    gap: 2.4rem;
   }
 
   .section-hero {
@@ -74,6 +62,10 @@
 
   .hero-img-box::after {
     content: none;
+  }
+
+  .heading-secondary {
+    font-size: 4.2rem;
   }
 
   .portfolio-gallery {
@@ -126,9 +118,48 @@
     padding: 6.4rem 0;
   }
 
-  .footer-grid {
+  .footer--grid {
     grid-template-columns: 1fr 0.5fr 1fr;
-    gap: 10rem;
+    gap: 5rem;
   }
+
+}
+
+/* ---------------------------------------- */
+/* BELOW 912px (Some Portrait Tablets) */
+/* ---------------------------------------- */
+@media (max-width:57em) {
+  html {
+    /* 8px: 8/16=0.5 */
+    font-size: 50%;
+  }
+
+  .header,
+  .container {
+    max-width: 80rem;
+  }
+
+  .section-hero {
+    padding: 3.2rem 0;
+  }
+
+  .hero.grid-container--2cols {
+    grid-template-columns: 1fr;
+    gap: 7.2rem;
+  }
+
+  .hero-text-box {
+    text-align: center;
+  }
+
+  .featured-logos-group {
+    justify-content: center;
+    margin-top: 4.8rem;
+  }
+
+  /* .portfolio-img-link-box {
+    height: 5rem;
+  } */
+
 
 }
