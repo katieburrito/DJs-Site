@@ -126,6 +126,7 @@ body {
   letter-spacing: -0.2px;
   color: #183d5d;
   margin-bottom: 3.2rem;
+  grid-column: 1 /2;
 }
 
 .heading-secondary {

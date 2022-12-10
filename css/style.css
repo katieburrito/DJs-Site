@@ -42,6 +42,11 @@
   border-bottom: 2px solid #b62e0f;
 }
 
+.header-hamburger {
+  display: none;
+  visibility: none;
+}
+
 
 
 /* ------------------------ */
@@ -148,8 +153,8 @@
 
 .hero-img-box::after {
   content: "";
-  height: 55rem;
-  width: 38rem;
+  height: 150%;
+  width: 75%;
   border: 7px double #b62e0f;
   border: 7px double #183d5d;
   position: absolute;
@@ -280,7 +285,8 @@
 }
 
 .testimonials {
-  width: 85rem;
+  /* width: 85rem; */
+  width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -289,7 +295,6 @@
 
 .testimonial-card:link,
 .testimonial-card:visited {
-  height: 25rem;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -311,10 +316,16 @@
   box-shadow: 0 0 0 0.8rem #183d5d;
 }
 
+.testimonial-img-box {
+  /* width: 40rem; */
+  width: 40%;
+  background-color: aqua;
+}
+
 .testimonial-img {
-  width: 40rem;
   filter: none;
   transition: all 0.4s;
+  width: 100%;
 }
 
 .testimonial-card:hover .testimonial-img {
@@ -435,7 +446,7 @@
 .how-to-step::before {
   content: "";
   /* border: 5px solid #b62e0f; */
-  border-width: 5px;
+  border-width: .5rem;
   border-style: solid;
   border-image: linear-gradient(to bottom, #b62e0f, #f2aaaa) 5;
   border-right: none;
