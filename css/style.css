@@ -176,12 +176,15 @@
   background-color: #183d5d;
 }
 
-/* for 3x5 gallery, use below two rules: */
 .portfolio-gallery {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 1.6rem;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  grid-template-rows: repeat(3, 1fr);
+  grid-auto-rows: 0;
+  overflow: hidden;
 }
 
 .portfolio-img-link-box:link,
@@ -192,30 +195,8 @@
   display: flex;
   justify-content: center;
   transition: all 0.4s;
-
   position: relative;
 }
-
-
-/* for 3x3 gallery, use below two rules: */
-/* .portfolio-gallery {
-  width: 79rem;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.portfolio-img-link-box:link,
-.portfolio-img-link-box:visited {
-  height: 25rem;
-  width: 25rem;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  transition: all 0.4s;
-  position: relative;
-} */
 
 .portfolio-img-link-box:hover,
 .portfolio-img-link-box:active {}
@@ -286,7 +267,8 @@
 
 .testimonials {
   /* width: 85rem; */
-  width: 60%;
+  max-width: 60%;
+
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -304,6 +286,8 @@
   /* background gradients don't work with transitions, so it's immediate instead of gradual on hover */
   /* background-image: linear-gradient(to bottom right, #951212, #b62e0f); */
   transition: all 1s;
+
+  height: 25rem;
 }
 
 .testimonial-card:hover,
@@ -317,15 +301,18 @@
 }
 
 .testimonial-img-box {
-  /* width: 40rem; */
   width: 40%;
-  background-color: aqua;
+  overflow: hidden;
+  flex-shrink: 0;
+
+  height: 25rem;
 }
 
 .testimonial-img {
   filter: none;
   transition: all 0.4s;
-  width: 100%;
+
+  height: 100%;
 }
 
 .testimonial-card:hover .testimonial-img {

@@ -42,8 +42,7 @@
 
   .portfolio-gallery {
     grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 0;
-    overflow: hidden;
+    /* grid-template-columns: repeat(3, 1fr); */
   }
 
   .why-djs-boxes {
@@ -162,7 +161,8 @@
     visibility: visible;
     font-size: 3.2rem;
     grid-column: 3 /4;
-    justify-self: right;
+    /* justify-self: right; */
+    justify-self: center;
   }
 
   .grid-container--2cols {
@@ -170,9 +170,18 @@
     justify-content: center;
   }
 
+  .grid-container--3cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .section-hero {
     text-align: center;
     padding: 0 3.2rem;
+  }
+
+  .hero-description {
+    width: 75%;
+    margin: 0 auto 3.2rem auto;
   }
 
   .featured-logos-group {
@@ -184,10 +193,64 @@
   }
 
   .portfolio-gallery {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 0;
-    overflow: hidden;
+    /* grid-template-columns: repeat(3, 1fr); */
+  }
 
+
+  .testimonial-card:link,
+  .testimonial-card:visited {
+    position: relative;
+    background-color: transparent;
+  }
+
+  .testimonial-img-box {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .testimonial-img {
+    width: 100%;
+    height: auto;
+    filter: brightness(30%);
+    /* filter: saturate(130%); */
+  }
+
+  .testimonial-card:hover .testimonial-author {
+    color: #951212;
+  }
+
+  .testimonial-text-group {
+    z-index: 0;
+  }
+
+  .testimonial-text-group::after,
+  .testimonial-text-group::before {
+    display: none;
+    visibility: hidden;
+  }
+
+
+  .footer--grid {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .footer--social-col {
+    grid-row: 1;
+  }
+
+  .copyright {
+    margin-bottom: 0;
+  }
+
+  .footer--newsletter-col {
+    max-width: 50%;
+  }
+
+  .newsletter-sign-up {
+    flex-direction: column;
   }
 
 
@@ -198,39 +261,52 @@
 
 
 
+/* ---------------------------------------- */
+/* BELOW 752px (Smaller tablets) */
+/* ---------------------------------------- */
+
+@media (max-width: 47em) {
 
 
 
-/* .heading-tertiary {
+
+
+
+  /* ****Switch to using flexbox for gallery grid instead??? */
+
+
+
+
+  /* .heading-tertiary {
     font-size: 2.4rem;
   } */
 
-/* .section-how .grid-container--3cols {
+  /* .section-how .grid-container--3cols {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   } */
 
-/* .gallery {
+  /* .gallery {
   grid-template-columns: repeat(2, 1fr);
 } */
 
-/* .grid {
+  /* .grid {
     column-gap: 4.8rem;
     row-gap: 6.4rem;
   } */
 
-/* .header {
+  /* .header {
     padding: 0 3.2rem;
   } */
 
-/* .main-nav-list {
+  /* .main-nav-list {
     gap: 3.2rem;
   } */
 
-/* .hero {
+  /* .hero {
     gap: 4.8rem;
   } */
 
-/* .testimonials-container {
+  /* .testimonials-container {
     padding: 9.6rem 3.2rem;
   } */
