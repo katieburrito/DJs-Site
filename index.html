@@ -22,22 +22,27 @@
 
 <body>
 
-  <header class="header">
+  <header class="header nav-open">
     <a href="#">
       <img class="djs-logo" src="img/djs-logo.png" alt="DJ's logo">
     </a>
-
-    <ion-icon class="header-hamburger" name="menu-outline"></ion-icon>
-
-    <nav>
+    <nav class="main-nav">
       <ul class="nav-list">
         <li><a href="#" class="nav-item">Home</a></li>
-        <li><a href="#" class="nav-item">About DJ's</a></li>
-        <li><a href="#" class="nav-item">Portfolio</a></li>
-        <li><a href="#" class="nav-item">Contact</a></li>
+        <li><a href="#why-djs" class="nav-item">About DJ's</a></li>
+        <li><a href="#portfolio" class="nav-item">Portfolio</a></li>
+        <li><a href="#cta" class="nav-item">Contact</a></li>
         <li><a href="https://buildertrend.net/" target="_blank" class="nav-item">Client Portal</a></li>
       </ul>
     </nav>
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+
+      <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+    </button>
+    <!-- <ion-icon class="header-hamburger" name="menu-outline"></ion-icon> -->
+
   </header>
 
   <main>
@@ -62,8 +67,8 @@
             remodeling with the guidance of seasoned industry experts. Together, let's turn your house into your dream
             home.
           </p>
-          <a href="#" class="btn btn--primary margin-right-sm">See Our Work &darr;</a>
-          <a href="#" class="btn btn--secondary">Meet Our Team</a>
+          <a href="#portfolio" class="btn btn--primary margin-right-sm">See Our Work &darr;</a>
+          <a href="#why-djs" class="btn btn--secondary">About DJ's</a>
 
           <div class="featured-logos-group">
 
@@ -104,7 +109,7 @@
 
     </section>
 
-    <section class="section-portfolio">
+    <section class="section-portfolio" id="portfolio">
       <div class="container">
         <p class="subheading subheading--dark-ground">Portfolio</p>
         <h2 class="heading-secondary heading-secondary--dark-ground">Our work speaks for itself.</h2>
@@ -203,7 +208,7 @@
     View more of our superior work.
     View more of highly acclaimed work. -->
 
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
 
       <div class="container">
         <p class="subheading">Testimonials</p>
@@ -268,7 +273,7 @@
 
     </section>
 
-    <section class="section-why-djs">
+    <section class="section-why-djs" id="why-djs">
       <div class="container">
 
         <div class="services-title">
@@ -336,9 +341,11 @@
 
         </div>
 
-        <a href="#" class="next-step-link">If you value these qualities, send us a message!</a>
+        <a href="#cta" class="next-step-link">
+          Send us a message!</a>
 
         <!-- 
+           If you're looking for an experienced, transparent, reliable, and accredited contractor, send us a message!
           If we sound like a match for your home, send us a message!
           If we sound like the right fit for your home, send us a message!
           If we sound like a good fit, send us a message!
@@ -352,7 +359,7 @@
       </div>
     </section>
 
-    <section class="section-how">
+    <section class="section-how" id="how">
       <div class="container">
         <div class="section-how--header">
           <p class="subheading">How it works</p>
@@ -421,7 +428,7 @@
 
     </section>
 
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
       <div class="container--cta">
 
         <h3 class="heading-tertiary cta-heading">We'd love to hear from you!</h3>
@@ -459,7 +466,7 @@
             <div>
               <input class="cta-remodel-type--button" type="radio" id="living-bed" name="remodel-type"
                 value="living-bed">
-              <label class="cta-remodel-type--label" for="living-bed">Living Room/ Bedroom</label>
+              <label class="cta-remodel-type--label" for="living-bed">Living Room or Bedroom</label>
             </div>
             <div>
               <input class="cta-remodel-type--button" type="radio" id="exterior" name="remodel-type" value="exterior">
@@ -537,7 +544,7 @@
           </li>
         </ul>
 
-        <p class="copyright">Copyright &copy; 2022 DJ's Home Improvements. <br>
+        <p class="copyright">Copyright &copy; <span class="year">2022</span> DJ's Home Improvements. <br>
           All rights reserved.</p>
       </div>
 
@@ -562,6 +569,8 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <script defer src="js/script.js"></script>
 
 </body>
 
