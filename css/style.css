@@ -61,6 +61,26 @@
   display: none;
 }
 
+/* STICKY NAVIGATION */
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 12rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  z-index: 999;
+  background-color: #fffffff1;
+  background-color: #ffffff;
+  box-shadow: 0 1.2rem 3.2rem rgba(24, 61, 93, 0.03);
+}
+
+.sticky .section-hero {
+  margin-top: 10.8rem;
+}
+
+
 
 /* ------------------------ */
 /* HERO SECTION */
@@ -521,6 +541,7 @@
   max-width: 70rem;
   margin: 0 auto;
   padding: 6.4rem;
+  box-shadow: 0 3.2rem 6.4rem rgba(24, 61, 93, 0.2);
 }
 
 .heading-tertiary.cta-heading {
@@ -718,4 +739,57 @@
 .newsletter-sign-up button:hover {
   background-color: #e0e8f8;
   color: #183d5d;
+}
+
+
+
+/* FIXING SAFARI FLEXBOX GAP ISSUE */
+
+.no-flexbox-gap .main-nav-list li:not(:last-child) {
+  margin-right: 4.8rem;
+}
+
+.no-flexbox-gap .list-item:not(:last-child) {
+  margin-bottom: 1.6rem;
+}
+
+.no-flexbox-gap .list-icon:not(:last-child) {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .delivered-faces {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .meal-attribute:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.no-flexbox-gap .meal-icon {
+  margin-right: 1.6rem;
+}
+
+.no-flexbox-gap .footer-row div:not(:last-child) {
+  margin-right: 6.4rem;
+}
+
+.no-flexbox-gap .social-links li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .footer-nav li:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 75em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 3.2rem;
+  }
+}
+
+@media (max-width: 59em) {
+  .no-flexbox-gap .main-nav-list li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 4.8rem;
+  }
 }
