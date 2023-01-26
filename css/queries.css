@@ -151,19 +151,74 @@
     justify-self: center;
   }
 
-  .header nav {
-    display: none;
+
+  /* MOBILE NAVIGATION */
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(173, 216, 230, 0.9);
+    background-color: #e0e8f8ee;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translate(100%, -100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* HIDE NAVIGATION */
+    /* display set to none does not allow transitions, so use below instead to hide elements with transitions */
+    /* hide element visually (invisible) */
+    opacity: 0;
+    /* hide element from tab through */
+    pointer-events: none;
+    /* hide element from screen readers */
     visibility: hidden;
   }
 
-  .header-hamburger {
-    display: block;
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 4.8rem;
+  }
+
+  .nav-item:link,
+  .nav-item:visited {
+    font-size: 3rem;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translate(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: inline-block;
+    /* in tutorial, this is just block, but default for menu icon was inline-block, so used that instead to keep them in same place */
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  /* .icon-mobile-nav[name="menu-outline"] {
     visibility: visible;
     font-size: 3.2rem;
     grid-column: 3 /4;
-    /* justify-self: right; */
     justify-self: center;
-  }
+  } */
+
+
 
   .grid-container--2cols {
     grid-template-columns: 1fr;
@@ -230,7 +285,6 @@
     visibility: hidden;
   }
 
-
   .footer--grid {
     grid-template-columns: 1fr;
     gap: 4rem;
@@ -265,48 +319,48 @@
 /* BELOW 752px (Smaller tablets) */
 /* ---------------------------------------- */
 
-@media (max-width: 47em) {
+/* @media (max-width: 47em) { */
 
 
 
 
 
 
-  /* ****Switch to using flexbox for gallery grid instead??? */
+/* ****Switch to using flexbox for gallery grid instead??? */
 
 
 
 
-  /* .heading-tertiary {
+/* .heading-tertiary {
     font-size: 2.4rem;
   } */
 
-  /* .section-how .grid-container--3cols {
+/* .section-how .grid-container--3cols {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   } */
 
-  /* .gallery {
+/* .gallery {
   grid-template-columns: repeat(2, 1fr);
 } */
 
-  /* .grid {
+/* .grid {
     column-gap: 4.8rem;
     row-gap: 6.4rem;
   } */
 
-  /* .header {
+/* .header {
     padding: 0 3.2rem;
   } */
 
-  /* .main-nav-list {
+/* .main-nav-list {
     gap: 3.2rem;
   } */
 
-  /* .hero {
+/* .hero {
     gap: 4.8rem;
   } */
 
-  /* .testimonials-container {
+/* .testimonials-container {
     padding: 9.6rem 3.2rem;
   } */
