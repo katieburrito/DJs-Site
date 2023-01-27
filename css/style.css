@@ -174,25 +174,22 @@
   transform: scale(1.2);
 }
 
-.hero-img-box {
+.hero-img-box picture {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem 1rem;
-  border: 7px double #b62e0f;
   border: 7px double #183d5d;
 }
 
-.hero-img-box::after {
+.hero-img-box picture::after {
   content: "";
   height: 150%;
   width: 75%;
-  border: 7px double #b62e0f;
   border: 7px double #183d5d;
   position: absolute;
   z-index: -1;
-  /* box-shadow: 0 0 0 3.2rem orange; */
 }
 
 .hero-img {
