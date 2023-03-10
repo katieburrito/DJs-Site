@@ -80,16 +80,13 @@
   margin-top: 10.8rem;
 }
 
-
-
 /* ------------------------ */
 /* HERO SECTION */
 /* ------------------------ */
 
 .section-hero {
   padding: 9.6rem 0 12.8rem 0;
-  /* background-color: #edf6fd; */
-  /* background-color: #e0e8f8; */
+  padding: 4rem 0 12.8rem 0;
   /* background-color: #fff; */
 }
 
@@ -103,38 +100,9 @@
 }
 
 .hero-emphasis {
-  font-family: 'Birthstone Bounce', cursive;
+  font-family: "Birthstone Bounce", cursive;
   font-size: 7.4rem;
-  /* gradient text below */
-  /* background: linear-gradient(#951212, #b62e0f);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-
-  /* gradient underline below */
-  /* background: linear-gradient(to right, #951212, #f2aaaa, #951212);
-  background-position: 0 100%;
-  background-size: 100% 4px;
-  background-repeat: repeat-x; */
 }
-
-/* position: relative;
-}
-
-.hero-emphasis::before {
-  content: "";
-  position: absolute;
-  left: -0.5rem;
-  bottom: 0.8rem;
-  width: 18rem;
-  height: 3rem;
-  transform: skew(-18deg);
-  background-color: #e0e8f8bc;
-  z-index: -1;
-}
-
-.hero-emphasis--shorter::before {
-  width: 15rem;
-} */
 
 .hero-description {
   font-size: 1.8rem;
@@ -196,6 +164,73 @@
   width: 90%;
 }
 
+/* Below is attempt to create pentagon house shape with hero image, works for large screens, but currently not responsive */
+
+/* .hero-img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #183d5d;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0 100%);
+  width: 500px;
+  height: 500px;
+} */
+
+/* .hero-img-box::after {
+  content: "";
+  position: absolute;
+  height: 95%;
+  width: 95%;
+  background-color: #fff;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0 100%);
+}
+
+.hero-img-box picture {
+  height: 85%;
+  width: 85%;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0 100%);
+  background-size: cover;
+  background-position: top;
+  z-index: 100;
+} */
+
+/* .hero-img-box picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 7px double #183d5d;
+  padding: 1rem 3rem;
+  background-color: #183d5d;
+  padding: 5rem;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0 100%);
+} */
+
+/* .hero-img-box picture::after {
+  content: "";
+  height: 150%;
+  width: 75%;
+  border: 7px double #183d5d;
+  position: absolute;
+  z-index: -1;
+} */
+
+/* .hero-img-box picture::after {
+  content: "";
+  height: 20%;
+  width: 90%;
+  border: 7px double #183d5d;
+  border: 7px double red;
+  position: absolute;
+  z-index: -1;
+  background-color: pink;
+} */
+
+/* .hero-img {
+  width: 90%;
+  clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 100%, 0 100%);
+} */
 
 /* ------------------------ */
 /* PORTFOLIO SECTION */
@@ -208,13 +243,11 @@
 
 .portfolio-gallery {
   display: grid;
-  gap: 1.6rem;
-
+  column-gap: 1.6rem;
   grid-template-columns: repeat(5, 1fr);
-
   grid-template-rows: repeat(3, 1fr);
-  grid-auto-rows: 0;
-  overflow: hidden;
+  grid-auto-rows: 0px;
+  overflow-y: hidden;
 }
 
 .portfolio-img-link-box:link,
@@ -226,10 +259,14 @@
   justify-content: center;
   transition: all 0.4s;
   position: relative;
+
+  /* due to bug, must use column-gap on grid-containe and margin-bottom on grid elements instead of just [grid-]gap to make gutters in grid with auto rows: */
+  margin-bottom: 1.6rem;
 }
 
 .portfolio-img-link-box:hover,
-.portfolio-img-link-box:active {}
+.portfolio-img-link-box:active {
+}
 
 /* the following two rules must be written in this order for the hover to work properly */
 /* see: https://css-tricks.com/hover-on-everything-but/ */
@@ -285,7 +322,6 @@
 /* border: 1px solid #333; */
 /* border-radius: 4px; */
 /* transform: translate(0, -50%); */
-
 
 /* ------------------------ */
 /* TESTIMONIALS SECTION */
@@ -357,7 +393,7 @@
 .testimonial-text-group::before {
   content: "\“";
   font-size: 30rem;
-  font-family: 'Times New Roman', serif;
+  font-family: "Times New Roman", serif;
   opacity: 10%;
   position: absolute;
   left: -0.5%;
@@ -367,7 +403,7 @@
 .testimonial-text-group::after {
   content: "\”";
   font-size: 30rem;
-  font-family: 'Times New Roman', serif;
+  font-family: "Times New Roman", serif;
   opacity: 10%;
   position: absolute;
   left: 70%;
@@ -396,7 +432,6 @@
   color: #888;
 }
 
-
 /* ------------------------ */
 /* WHY DJ'S SECTION */
 /* ------------------------ */
@@ -404,8 +439,7 @@
 .section-why-djs {
   padding: 9.6rem 0;
   /* background-color: #e0e8f8; */
-  background-image:
-    linear-gradient(#e0e8f8b1, #e0e8f8b1),
+  background-image: linear-gradient(#e0e8f8b1, #e0e8f8b1),
     url(../img/testimonial-michael.png);
   background-repeat: no-repeat;
   background-position: 50%;
@@ -437,7 +471,6 @@
   padding: 0 2.4rem 3.2rem 2.4rem;
 }
 
-
 /* ------------------------ */
 /* HOW IT WORKS SECTION */
 /* ------------------------ */
@@ -463,7 +496,7 @@
 .how-to-step::before {
   content: "";
   /* border: 5px solid #b62e0f; */
-  border-width: .5rem;
+  border-width: 0.5rem;
   border-style: solid;
   border-image: linear-gradient(to bottom, #b62e0f, #f2aaaa) 5;
   border-right: none;
@@ -524,7 +557,6 @@
   line-height: 1.6;
 }
 
-
 /* ------------------------ */
 /* CTA SECTION */
 /* ------------------------ */
@@ -574,7 +606,7 @@
   font-size: 1.6rem;
   line-height: 1.4;
   color: #333;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .cta-email-container,
@@ -625,14 +657,12 @@
   line-height: 1.2;
   color: #e0e8f8;
   font-family: inherit;
-
 }
 
 .cta-form *:focus {
   outline: none;
   box-shadow: 0 0 0 0.8rem #b62e0f;
 }
-
 
 /* ------------------------ */
 /* FOOTER */
@@ -737,8 +767,6 @@
   background-color: #e0e8f8;
   color: #183d5d;
 }
-
-
 
 /* FIXING SAFARI FLEXBOX GAP ISSUE */
 

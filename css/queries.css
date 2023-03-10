@@ -11,9 +11,7 @@
   .container {
     max-width: 120rem;
   }
-
 }
-
 
 /* ---------------------------------------- */
 /* BELOW 1088px (Landscape tablets) */
@@ -74,9 +72,7 @@
   .how-to-step {
     padding: 1rem;
   }
-
 }
-
 
 /* ---------------------------------------- */
 /* BELOW 960px (Portrait tablets) */
@@ -134,13 +130,11 @@
   }
 }
 
-
 /* ---------------------------------------- */
 /* BELOW 752px (Smaller tablets) */
 /* ---------------------------------------- */
 
 @media (max-width: 47em) {
-
   .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -151,6 +145,9 @@
     justify-self: center;
   }
 
+  .portfolio-gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
   /* MOBILE NAVIGATION */
 
@@ -221,8 +218,6 @@
     justify-self: center;
   } */
 
-
-
   .grid-container--2cols {
     grid-template-columns: 1fr;
     justify-content: center;
@@ -249,11 +244,6 @@
   .hero-img {
     display: none;
   }
-
-  .portfolio-gallery {
-    /* grid-template-columns: repeat(3, 1fr); */
-  }
-
 
   .testimonial-card:link,
   .testimonial-card:visited {
@@ -309,14 +299,17 @@
   .newsletter-sign-up {
     flex-direction: column;
   }
-
-
 }
 
+/* ---------------------------------------- */
+/* BELOW 544px (Phones) */
+/* ---------------------------------------- */
 
-
-
-
+@media (max-width: 34em) {
+  .portfolio-gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 /* ---------------------------------------- */
 /* BELOW 752px (Smaller tablets) */
@@ -324,15 +317,7 @@
 
 /* @media (max-width: 47em) { */
 
-
-
-
-
-
 /* ****Switch to using flexbox for gallery grid instead??? */
-
-
-
 
 /* .heading-tertiary {
     font-size: 2.4rem;
